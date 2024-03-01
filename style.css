@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F4F5F5;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 2rem 5%;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 35px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #444;
+}
+
+.navbar button{
+    background-color: #53A7D7;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Section Hero */
+.hero{
+    background-image: url(hero-bg.png);
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero h1{
+    font-size: 50px;
+}
+
+
+.hero h3{
+    margin: 15px 0;
+}
+
+.hero button{
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.heroText{
+    position: relative;
+    width: 700px;
+}
+
+.hero .heroText img{
+    position: absolute;
+    bottom: 80px;
+    right: 350px;
+}
+
+.hero .heroImg{
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+
+.hero .heroImg img{
+    width: 400px;
+}
+
+/* Features Section */
+.features{
+    padding: 3rem 5%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features .card{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(bg-elements-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-position: bottom;
+    padding:20px 30px;
+    border-radius: 7px;
+    position: relative;
+}
+
+.features .icons{
+    background-color: white;
+    position: absolute;
+    top: -40px;
+    padding: 20px 22px;
+    box-shadow: -1px 7px 22px 0px rgba(83,167,215,0.75);
+    border-radius: 50%;
+
+}
+
+.features .card h3{
+    margin: 10px 0;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.features .card p{
+    font-size: 15px;
+}
+
+/* Section About */
+.about{
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.about .aboutText{
+    width: 700px;
+}
+
+.about .card{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.about .card .images{
+    margin-right: 15px;
+}
+
+.about .aboutText h5{
+    color: #53A7D7;
+}
+
+.about .aboutText h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about .cardText h4{
+    margin-bottom: 10px;
+}
+
+.about .cardText p{
+    font-size: 12px;
+}
+
+.about button{
+    padding: 10px 20px;
+    background-color: #53A7D7;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* Support Section */
+.support{
+    padding: 4rem 5%;
+    background-color: #fff;
+}
+
+/* Learning */
+.learning{
+    padding: 2rem 5%;
+    margin-top: 50px;
+}
+
+.learning .titleSection{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.learning button{
+    padding: 10px 20px;
+    background-color: #53A7D7;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.learning h1{
+    font-size: 35px;
+}
+
+.learningContent{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.learningContent .card{
+    width: 380px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.learningContent .card .cardText{
+    padding: 20px;
+}
+
+.learningContent .card h4{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.learning .card img{
+    width: 100%;
+}
+
+.learning ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.learning ul li i{
+    margin-right: 5px;
+}
+
+/* Popular */
+.popular{
+    padding: 2rem 5%;
+    background-image: url(courses-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.popular .popularTitle{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.popular .popularText h5{
+    color: #53A7D7;
+}
+
+.popular .popularText h1{
+    font-size: 30px;
+}
+
+.popular button{
+    padding: 10px 20px;
+    background-color: #53A7D7;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.popular .popularContent{
+    margin-top: 50px;
+}
+
+.popular .popularContent .cardWrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.popularContent .card{
+    background-color: white;
+    width: 600px;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    position: relative;
+}
+
+.popularContent .card h3{
+    font-size: 25px;
+}
+
+.popularContent .card h5{
+    margin: 10px 0;
+    color: gray;
+}
+
+.popularContent .card ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+.popularContent .card ul li i{
+    margin-right: 10px;
+    color: #53A7D7;
+}
+
+.popularContent .card .thumbImages{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.popularContent .card .images img{
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #53A7D7;
+}
+
+.popularContent .card .price{
+    border-left: 5px solid rgb(177, 174, 174);
+    padding-left: 30px;
+}
+
+.popular .popularContent .price h1{
+    font-size: 35px;
+    color: gray;
+}
+
+.popularContent .card .icons1{
+    position: absolute;
+    top: -50px;
+    left: -70px;
+}
+
+.popularContent .card .icons2{
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+
+/* Teacher */
+.teacher{
+    padding: 2rem 5%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.teacher .teacherText{
+    width: 400px;
+    background-image: url(paint-shape.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.teacher .teacherText h1{
+    font-size: 40px;
+}
+
+.teacher button{
+    padding: 10px 20px;
+    background-color: #53A7D7;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.teacher .teacherContent{
+    width: 700px;
+}
+
+.teacher .teacherContent .card{
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.teacher .teacherContent .card .images{
+    overflow: hidden;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.teacher .teacherContent .card .cardText{
+    position: absolute;
+    bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.teacher .teacherContent .card img{
+    width: 100%;
+}
+
+.teacher .teacherContent .card .cardText ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.teacher .teacherContent .card .cardText ul li i{
+    color: #53A7D7;
+    margin-right: 10px;
+}
+
+
+.teacherContent .teacherWrapper .cardWrapper{
+    display: flex;
+    align-items: center;
+}
+
+/* Discount */
+.discount{
+    padding: 2rem 5%;
+    background-image: url(coming-soon-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.discount .cardText{
+    width: 700px;
+}
+
+.discount h1{
+    font-size: 35px;
+}
+
+.discount h3{
+    margin: 15px 0;
+}
+
+.discount p{
+    color: gray;
+}
+
+.discount button{
+    padding: 10px 20px;
+    background-color: #53A7D7;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 50px;
+}
+
+/* Testimonials */
+.testimonials{
+    padding: 2rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.testimonials .testimonialsText{
+    width: 600px;
+    background-image: url(bg-elements-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.testimonials .testimonialsText h5{
+    color: #53A7D7;
+}
+
+.testimonials .testimonialsText h1{
+    font-size: 40px;
+}
+
+.testimonials .testimonialsText p{
+    color: gray;
+}
+
+.testimonials .testimonialsImages{
+    width: 600px;
+}
+
+.testimonials .testimonialsImages .card{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    background-image: url(bg-elements-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    overflow: hidden;
+}
+
+.testimonials .testimonialsImages .card img{
+    width: 150px;
+}
+
+.testimonials .testimonialsImages .card ul{
+    margin: 10px 0;
+}
+
+.testimonials .testimonialsImages .card ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+.testimonials .testimonialsImages .card ul i{
+    color: #53A7D7;
+}
+
+.testimonials .testimonialsImages .images{
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/* Blog */
+.blog{
+    padding: 2rem 5%;
+    margin-top: 100px;
+}
+
+
+.blog .blogtTitle{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.blog button{
+    padding: 10px 20px;
+    background-color: #53A7D7;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.blog h1{
+    font-size: 35px;
+}
+
+.blog h5{
+    color: #53A7D7;
+}
+
+.blogContent{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blogContent .card{
+    width: 370px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.blogContent .card .images img{
+    width: 100%;
+}
+
+.blogContent .card .cardText{
+    padding: 10px;
+}
+
+.blogContent .card .cardText p{
+    margin: 10px 0;
+    font-size: 14px;
+    color: gray;
+}
+
+.blogContent .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blogContent .user .userBx{
+    display: flex;
+    align-items: center;
+}
+
+.blogContent .user .userBx img{
+    border-radius: 50%;
+    border: 2px solid #53A7D7;
+    margin-right: 10px;
+}
+
+.blogContent .user a{
+    text-decoration: none;
+    color: #53A7D7;
+}
+
+/* Questions */
+.question{
+    padding: 2rem 5%;
+    color: #fff;
+}
+
+.question .card{
+    background-image: url(banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem ;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+.question h1{
+    font-size: 40px;
+}
+
+.question .card p{
+    margin: 20px 0;
+}
+
+.question span{
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #53A7D7;
+}
+
+/* footer */
+footer{
+    background-image: url(footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer ul li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+footer h3{
+    margin-bottom: 20px;
+}
+
+footer .card{
+    width: 250px;
+}
+
+footer .col-1 ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
